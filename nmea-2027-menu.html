@@ -1,27 +1,20 @@
-<nav class="nmea2027navbar" aria-label="NMEA 2027 Conference">
+<!-- Open Sidebar Button -->
+<button class="conf2027openbtn" onclick="openConf2027Sidebar()">☰ Menu</button>
 
-  <a href="/conference/2027">Home</a>
+<!-- Sidebar Menu -->
+<div id="conf2027Sidebar" class="conf2027sidebar">
 
-  <div class="nmea2027subnav">
-    <div class="nmea2027subnavbtn" tabindex="0">
-      Attend
-    </div>
+  <button class="conf2027closebtn" onclick="closeConf2027Sidebar()">×</button>
 
-    <div class="nmea2027subnav-content">
-      <a href="/nmea2027/lodging">Lodging</a>
-      <a href="/nmea2027/transportation">Transportation</a>
-      <a href="/nmea2027/shipping">Shipping</a>
-    </div>
+  <a href="/conference/2027"
+     style="font-weight:900; background-color:#FC814A; color:#000000;">
+     NMEA 2027
+  </a>
+
+  <button class="conf2027accordion">Logistics ▾</button>
+  <div class="conf2027panel">
+    <a href="/nmea2027/transportation">Transportation</a>
+    <a href="/nmea2027/lodging">Lodging</a>
   </div>
 
-  <div class="nmea2027subnav">
-    <div class="nmea2027subnavbtn" tabindex="0">
-      Support
-    </div>
-
-    <div class="nmea2027subnav-content">
-      <a href="/nmea2027/sponsorship">Sponsorship</a>
-    </div>
-  </div>
-
-</nav>
+</div>
